@@ -1,0 +1,11 @@
+﻿<h3>RedirectToLogin</h3>
+
+@code {
+    [Inject]
+    public NavigationManager NavMan{ get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        NavMan.NavigateTo("/Identity/Account/Login");
+    }
+
+}
