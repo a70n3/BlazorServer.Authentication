@@ -1,0 +1,12 @@
+﻿@page
+@model BlazorServer.Authentication.Areas.Identity.Pages.Account.LoginModel
+
+<section>
+    <form id="account" method="post">
+        <input asp-for="Input.UserName" class="form-control" />
+        <label asp-for="Input.UserName" class="form-control"></label>
+        <input asp-for="Input.Password" class="form-control" />
+        <label asp-for="Input.Password" class="form-control" ></label>
+        <button type="submit" class="btn">Login</button>
+    </form>
+</section>
